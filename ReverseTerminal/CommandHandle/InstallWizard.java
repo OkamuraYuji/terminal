@@ -34,14 +34,14 @@ public class InstallWizard {
             
             if (!reset) {
                 String installCommand = String.format(
-                    "curl -# -SLo 1.tar.xz \"%s\" && cd $HOME && tar xvf 1.tar.xz && rm 1.tar.xz && echo %s && proot -S . bash",
+                    "curl -# -SLo 1.tar.xz \"%s\" && cd $(pwd) && tar xvf 1.tar.xz && rm 1.tar.xz && echo %s && proot -S . bash",
                     osUrl, "\"[INFO] Installation done!\""
                 );
                 Command.WriteCmd(installCommand);
             } else {
                 String reinstallCommand = String.format(
                     "ls | grep -v linux | grep -v config.ini | grep -v server.jar | xargs rm -rf && " +
-                    "curl -# -SLo 1.tar.xz \"%s\" && cd $HOME && tar xvf 1.tar.xz && rm 1.tar.xz && echo %s && proot -S . bash",
+                    "curl -# -SLo 1.tar.xz \"%s\" && cd $(pwd) && tar xvf 1.tar.xz && rm 1.tar.xz && echo %s && proot -S . bash",
                     osUrl, "\"[INFO] Installation done!\""
                 );
                 Command.WriteCmd(reinstallCommand);
