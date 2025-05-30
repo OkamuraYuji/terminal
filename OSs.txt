@@ -1,3 +1,3 @@
 ﻿Main 202505302
 Ubuntu20.04.2 https://cdimage.ubuntu.com/ubuntu-base/releases/20.04.2/release/ubuntu-base-20.04.2-base-amd64.tar.gz
-Ubuntu22.10 https://cdimage.ubuntu.com/ubuntu-base/releases/22.10/release//ubuntu-base-22.10-base-amd64.tar.gz
+Ubuntu22.04 https://cdimage.ubuntu.com/ubuntu-base/releases/22.04/release/ubuntu-base-22.04-base-amd64.tar.gz
